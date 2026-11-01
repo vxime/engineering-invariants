@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "article": {
+    "path": "glm53-kv-cache-cross-request-exposure",
+    "title": "Cloudflare 披露的 KV Cache 跨请求暴露：SGLang 为何仍将被拒绝的请求送入 handoff？",
+    "locale": "zh-cn",
+    "canonical": "https://vxi.me/posts/glm53-kv-cache-cross-request-exposure/",
+    "markdown": "https://vxi.me/posts/glm53-kv-cache-cross-request-exposure.md"
+  },
+  "verification": {
+    "level": "source-inspected",
+    "verified_at": "2026-10-28T00:00:00.000Z",
+    "summary": "Cloudflare 事故数字为厂商披露；固定版本 SGLang CPU 单测 19 passed，修复前后差分已观察。未复现 GPU/RDMA 或真实跨租户泄露。",
+    "environments": [
+      "Linux; AMD EPYC 9D25; 2 vCPU; 7 GB RAM",
+      "Python 3.12.3; pytest 9.2.0; torch 2.14.1+cpu"
+    ],
+    "evidence_mode": "mixed"
+  },
+  "public_sources": {
+    "repository": {
+      "url": "https://github.com/sgl-project/sglang",
+      "commit": "8f3d6944b76c428d884582cb6c82a39db1465360",
+      "label": "Pinned SGLang source"
+    },
+    "run": null
+  }
+}

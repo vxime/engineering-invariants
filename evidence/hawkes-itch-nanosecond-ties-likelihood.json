@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "article": {
+    "path": "hawkes-itch-nanosecond-ties-likelihood",
+    "title": "同一纳秒记录了 114 条执行事件：Hawkes 似然哪里容易算错？",
+    "locale": "zh-cn",
+    "canonical": "https://vxi.me/posts/hawkes-itch-nanosecond-ties-likelihood/",
+    "markdown": "https://vxi.me/posts/hawkes-itch-nanosecond-ties-likelihood.md"
+  },
+  "verification": {
+    "level": "first-party",
+    "verified_at": "2026-10-31T00:00:00.000Z",
+    "summary": "114 条人工反例与 13 项公开复现测试；AAPL 数据是历史聚合，并非真实 Hawkes 拟合或样本外预测。",
+    "environments": [
+      "Python 3.13.5; Linux x86_64; historical synthetic research tests",
+      "Python 3 standard-library public reproducer and aggregated histogram"
+    ],
+    "evidence_mode": "mixed"
+  },
+  "public_sources": {
+    "repository": null,
+    "run": null
+  }
+}
