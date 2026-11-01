@@ -1,6 +1,7 @@
 # DRAFT — NOT POSTED. Awaiting owner approval.
 # Target: https://github.com/TwiN/gatus/discussions
 # Category: Show and tell
+# GraphQL: repositoryId=MDEwOlJlcG9zaXRvcnkyMDYyMTQ4Njc= categoryId=MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyNzY5Njg4
 # Why Discussion, not Issue: every behavior observed matched expectations;
 # this shares the composed verification matrix (failure -> alert -> recovery -> restart).
 

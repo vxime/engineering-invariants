@@ -1,6 +1,7 @@
 # DRAFT — NOT POSTED. Awaiting owner approval.
 # Target: https://github.com/nautechsystems/nautilus_trader/discussions
 # Category: Show and tell
+# GraphQL: repositoryId=MDEwOlJlcG9zaXRvcnkxMzg1NTIxOTY= categoryId=MDE4OkRpc2N1c3Npb25DYXRlZ29yeTMyNTUzMTgx
 # Why Discussion, not Issue: the head-truncation behavior is documented in the
 # official docs at the pinned commit; this shares a runnable demonstration + checklist.
 
