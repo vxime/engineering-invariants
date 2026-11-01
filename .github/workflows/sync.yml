@@ -1,0 +1,29 @@
+name: weekly-sync
+
+on:
+  schedule:
+    # Every Monday 02:00 UTC — low-traffic window, keeps the index fresh
+    - cron: "0 2 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Sync from vxi.me invariants index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          bash sync.sh
+      - name: Push if changed
+        run: |
+          # sync.sh commits only when the tree changed; push if we are ahead
+          git status -sb | head -1
+          git push origin main || echo "nothing to push"

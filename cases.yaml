@@ -1,0 +1,56 @@
+# Enrichment overlay for README generation.
+# Keyed by invariant slug (matches https://vxi.me/invariants/index.json).
+# Keep en_summary to ONE sentence, factual, no marketing.
+cases:
+  glm53-kv-cache-cross-request-exposure:
+    system: "SGLang @ 8f3d694 / Cloudflare GLM-5.3"
+    version: "SGLang 8f3d694"
+    en_summary: "Req.set_finish_with_abort() sets to_finish, but disaggregated prefill/decode admission checks finished_reason, allowing a 1-token placeholder handoff and cross-request KV cache exposure."
+  openqodex-prepush-review-fail-open:
+    system: "OpenQodex 0.11.0"
+    version: "0.11.0 @ 2f2fa9e"
+    en_summary: "checkPush() returns abstain when the matching review record is incomplete, so a Git pre-push hook lets the push through by default instead of failing closed."
+  mcp-client-http-jsonrpc-iserror:
+    system: "MCP 2026 / Cakewalk"
+    version: "MCP 2026-03 draft"
+    en_summary: "Client retry logic cannot cleanly separate transport HTTP 503, JSON-RPC protocol errors, and tool-level isError:true carried over SSE."
+  vectorbt-nan-cvar-tail-sample-test-assertions:
+    system: "vectorbt 1.1.1 → 1.1.2"
+    version: "v1.1.2 @ f0d2afb"
+    en_summary: "Tail CVaR counted the raw array length (n=21) before masking NaNs, giving -4.67% instead of -5.50%; the v1.1.2 release also fixed an isclose early-return bug in tests/utils.py (PR #878)."
+  polymarket-election-volume-wash-trading-api-price-discovery:
+    system: "Polymarket Data API"
+    version: "2026 election cycle"
+    en_summary: "Wash-trading volume traps: reported volume in the Data API vs. matched-trade logs diverge, distorting price-discovery reads."
+  quant-winrate-repeated-stock-picks:
+    system: "Strategy evaluation (synthetic)"
+    version: "n/a"
+    en_summary: "The same stock selected repeatedly inflates win-rate; denominator science for repeated picks."
+  stock-score-calibration-simpsons-paradox:
+    system: "Multi-strategy scoring (synthetic)"
+    version: "n/a"
+    en_summary: "Two strategies both scoring 80 can reverse rank after pooling — Simpson's paradox in probability calibration."
+  ai-browser-hidden-content-tinyfish-fetch-agentql-boundaries:
+    system: "TinyFish Fetch / AgentQL"
+    version: "pinned in article"
+    en_summary: "Measured where a fetch-based AI browser returns hidden DOM content vs. AgentQL source-checked boundaries."
+  laya-guard-claude-code-precommand-check:
+    system: "laya-guard @ be37a19"
+    version: "be37a19"
+    en_summary: "Independent re-test of a regex + 322M local-model PreToolUse guard: the 3 author-reported bypass classes were confirmed fixed; real-model path shows a false-positive tradeoff (npm run deploy blocked at risk 0.857)."
+  pnpm-agent-skills-approval-scope:
+    system: "pnpm 12.11"
+    version: "12.11"
+    en_summary: "npm packages can ship Agent Skills; approving once at install time leaves upgrade-time scope checks open."
+  meta-muse-agent-permission-source-integrity:
+    system: "Meta Muse"
+    version: "pinned in article"
+    en_summary: "Proactive-permission test: caught injected instructions but missed a 30-minute calendar conflict — source-integrity gap."
+  hawkes-itch-nanosecond-ties-likelihood:
+    system: "NASDAQ ITCH 5.0 / Hawkes process"
+    version: "ITCH 5.0 spec"
+    en_summary: "114 simultaneous execution messages (E/C) in one nanosecond (AAPL): row-by-row recursion inflates log-likelihood by +213.29 nats vs. permutation-invariant pre-batch scoring."
+  nautilustrader-orderbook-batch-deltas-f-last:
+    system: "NautilusTrader 2.0.0rc7"
+    version: "2.0.0rc7 @ 55c0e82"
+    en_summary: "F_LAST groups detect a missing tail but not a missing head: a truncated batch can still close, and batch_deltas=True vs False changes which intermediate book states the matcher sees."
