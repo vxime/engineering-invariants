@@ -41,6 +41,15 @@ For each candidate article, answer in order. Stop at the first "no":
   for that maintainer, referencing their code.
 - **Rate limit yourself:** max 2–3 posts per day, hours apart. A burst of 10
   in 5 minutes trips new-account heuristics and reads as a campaign.
+- **One discussion per repo per 30 days.** Even if you have two findings for the
+  same repo, batch them into one post or wait. High signal-to-noise beats frequency.
+- **Environment fingerprint in every technical post.** State the exact
+  `OS / language version / pinned commit` you tested against (e.g.
+  `Python 3.13.5 / Linux x86_64 / vectorbt @ f0d2afb`). This is the fastest way
+  to disarm a maintainer's "did an LLM hallucinate this?" reflex.
+- **Use an account with history.** Never post from a fresh account with no
+  repos, no stars, no activity. (This account dates to 2018 — that history is
+  part of why the posts land.)
 
 ## After posting
 

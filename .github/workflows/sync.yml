@@ -2,8 +2,8 @@ name: weekly-sync
 
 on:
   schedule:
-    # Every Monday 02:00 UTC — low-traffic window, keeps the index fresh
-    - cron: "0 2 * * 1"
+    # Daily 02:00 UTC — keeps the index fresh within 24h of a new article
+    - cron: "0 2 * * *"
   workflow_dispatch: {}
 
 permissions:

@@ -1,0 +1,65 @@
+{
+  "nautechsystems/nautilus_trader": {
+    "release": {
+      "name": "NautilusTrader 1.231.0 Beta",
+      "publishedAt": "2026-08-02T18:53:49Z",
+      "tagName": "v1.231.0",
+      "url": "https://github.com/nautechsystems/nautilus_trader/releases/tag/v1.231.0"
+    },
+    "reason": "F_LAST/batch_deltas behavior may change across releases"
+  },
+  "polakowo/vectorbt": {
+    "release": {
+      "name": "v1.2.0",
+      "publishedAt": "2026-10-19T13:03:14Z",
+      "tagName": "v1.2.0",
+      "url": "https://github.com/polakowo/vectorbt/releases/tag/v1.2.0"
+    },
+    "reason": "verify the v1.1.2 NaN/isclose fixes stay fixed"
+  },
+  "TwiN/gatus": {
+    "release": {
+      "name": "v5.38.0",
+      "publishedAt": "2026-10-28T20:44:28Z",
+      "tagName": "v5.38.0",
+      "url": "https://github.com/TwiN/gatus/releases/tag/v5.38.0"
+    },
+    "reason": "503 alerting / SQLite persistence boundaries may change"
+  },
+  "scs0209/laya-guard": {
+    "release": {
+      "name": "v0.6.1",
+      "publishedAt": "2026-10-23T05:19:54Z",
+      "tagName": "v0.6.1",
+      "url": "https://github.com/scs0209/laya-guard/releases/tag/v0.6.1"
+    },
+    "reason": "ReDoS status still unknown; re-test if new release"
+  },
+  "openqodex/openqodex": {
+    "release": {
+      "name": "openqodex@0.16.0",
+      "publishedAt": "2026-10-28T01:57:43Z",
+      "tagName": "openqodex@0.16.0",
+      "url": "https://github.com/openqodex/openqodex/releases/tag/openqodex%400.16.0"
+    },
+    "reason": "fail-open design may evolve; see issue #282"
+  },
+  "moritzwilksch/diffle": {
+    "release": {
+      "name": "",
+      "publishedAt": "2026-10-29T13:47:16Z",
+      "tagName": "v0.3.5",
+      "url": "https://github.com/moritzwilksch/diffle/releases/tag/v0.3.5"
+    },
+    "reason": "anchoring logic may evolve; see issue #422"
+  },
+  "drkokorev/context-diet": {
+    "release": {
+      "name": "Context Diet 0.3.0",
+      "publishedAt": "2026-10-09T17:42:38Z",
+      "tagName": "v0.3.0",
+      "url": "https://github.com/drkokorev/context-diet/releases/tag/v0.3.0"
+    },
+    "reason": "dormant; note if it revives"
+  }
+}
