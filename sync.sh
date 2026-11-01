@@ -38,6 +38,10 @@ echo "== verify probes still run =="
 for p in probes/*.py; do
   python3 "$p" >/dev/null || { echo "PROBE FAILED: $p"; exit 1; }
 done
+for p in probes/*.mjs; do
+  [ -e "$p" ] || continue
+  node --test "$p" >/dev/null 2>&1 || { echo "PROBE FAILED: $p"; exit 1; }
+done
 echo "all probes pass"
 
 echo "== detect cases missing probes =="

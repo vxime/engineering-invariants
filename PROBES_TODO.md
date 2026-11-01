@@ -6,12 +6,8 @@ A probe must be stdlib-only, one-command runnable, and verified before commit
 
 - [ ] `glm53-kv-cache-cross-request-exposure` — [Cloudflare 披露的 KV Cache 跨请求暴露：SGLang 为何仍将被拒绝的请求送入 handoff？](https://vxi.me/posts/glm53-kv-cache-cross-request-exposure/)
 - [ ] `openqodex-prepush-review-fail-open` — [OpenQodex 0.11.0 实测：审阅没有完成，为什么 Git push 还可能成功？](https://vxi.me/posts/openqodex-prepush-review-fail-open/)
-- [ ] `mcp-client-http-jsonrpc-iserror` — [MCP 客户端怎么区分 HTTP 503、JSON-RPC error 与 isError？](https://vxi.me/posts/mcp-client-http-jsonrpc-iserror/)
 - [ ] `polymarket-election-volume-wash-trading-api-price-discovery` — [Polymarket 刷量争议：Data API 与撮合日志里的成交量陷阱](https://vxi.me/posts/polymarket-election-volume-wash-trading-api-price-discovery/)
-- [ ] `quant-winrate-repeated-stock-picks` — [同一只股票反复入选，量化策略胜率还可信吗？](https://vxi.me/posts/quant-winrate-repeated-stock-picks/)
-- [ ] `stock-score-calibration-simpsons-paradox` — [多策略选股评分如何对齐？同为 80 分的辛普森悖论与概率校准](https://vxi.me/posts/stock-score-calibration-simpsons-paradox/)
 - [ ] `ai-browser-hidden-content-tinyfish-fetch-agentql-boundaries` — [AI 浏览器会返回隐藏内容吗？TinyFish Fetch 实测与 AgentQL 源码核查](https://vxi.me/posts/ai-browser-hidden-content-tinyfish-fetch-agentql-boundaries/)
 - [ ] `laya-guard-claude-code-precommand-check` — [别让 Claude Code 乱删库：laya-guard（正则 + 322M 本地模型）PreToolUse 拦截实测与 3 类绕过复现](https://vxi.me/posts/laya-guard-claude-code-precommand-check/)
 - [ ] `pnpm-agent-skills-approval-scope` — [pnpm 12.11 让 npm 依赖携带 Agent Skills：批准一次以后，升级还要查什么？](https://vxi.me/posts/pnpm-agent-skills-approval-scope/)
 - [ ] `meta-muse-agent-permission-source-integrity` — [主动式 AI 权限安全怎么验？Meta Muse 实测：识破伪指令，却漏掉 30 分钟会议冲突](https://vxi.me/posts/meta-muse-agent-permission-source-integrity/)
-- [ ] `hawkes-itch-nanosecond-ties-likelihood` — [同一纳秒记录了 114 条执行事件：Hawkes 似然哪里容易算错？](https://vxi.me/posts/hawkes-itch-nanosecond-ties-likelihood/)
