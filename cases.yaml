@@ -31,6 +31,7 @@ cases:
     version: "n/a"
     en_summary: "Two strategies both scoring 80 can reverse rank after pooling — Simpson's paradox in probability calibration."
   ai-browser-hidden-content-tinyfish-fetch-agentql-boundaries:
+    probe_kind: "observation"
     system: "TinyFish Fetch / AgentQL"
     version: "pinned in article"
     en_summary: "Measured where a fetch-based AI browser returns hidden DOM content vs. AgentQL source-checked boundaries."
@@ -43,6 +44,7 @@ cases:
     version: "12.11"
     en_summary: "npm packages can ship Agent Skills; approving once at install time leaves upgrade-time scope checks open."
   meta-muse-agent-permission-source-integrity:
+    probe_kind: "observation"
     system: "Meta Muse"
     version: "pinned in article"
     en_summary: "Proactive-permission test: caught injected instructions but missed a 30-minute calendar conflict — source-integrity gap."
