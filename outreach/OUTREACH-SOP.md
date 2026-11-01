@@ -54,4 +54,6 @@ For each candidate article, answer in order. Stop at the first "no":
 
 | Date | Repo | Type | URL | Status |
 | ---- | ---- | ---- | --- | ------ |
+| 2026-11-01 | openqodex/openqodex | Issue (design question) | https://github.com/openqodex/openqodex/issues/282 | OPEN, awaiting maintainer |
+| 2026-11-01 | moritzwilksch/diffle | Issue (design question; repo has no Discussions) | https://github.com/moritzwilksch/diffle/issues/422 | OPEN, awaiting maintainer |
 | — | — | — | — | — |

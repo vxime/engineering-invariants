@@ -1,7 +1,7 @@
 # DRAFT — NOT POSTED. Awaiting owner approval.
-# Target: https://github.com/moritzwilksch/diffle/discussions
-# Category: Q&A (or Show and tell)
-# Why Discussion, not a bug Issue: the article explicitly states the ambiguity
+# Target: https://github.com/moritzwilksch/diffle/issues
+# (repo has Discussions DISABLED — Issue is the only channel)
+# Why an Issue framed as a question: the article explicitly states the ambiguity
 # was demonstrated in a synthetic model, NOT reproduced as a UI bug in Diffle.
 
 ## Question: when two identical text candidates exist, nearest-match anchoring may pick the wrong one
